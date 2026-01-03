@@ -44,3 +44,28 @@
     const y = document.querySelector("[data-year]");
     if (y) y.textContent = String(new Date().getFullYear());
 })();
+// ===== Certificates lightbox =====
+const certs = document.querySelectorAll(".cert");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxClose = document.getElementById("lightboxClose");
+
+certs.forEach(cert => {
+    cert.addEventListener("click", () => {
+        const src = cert.getAttribute("data-cert");
+        lightboxImg.src = src;
+        lightbox.classList.add("open");
+    });
+});
+
+lightboxClose?.addEventListener("click", () => {
+    lightbox.classList.remove("open");
+    lightboxImg.src = "";
+});
+
+lightbox?.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove("open");
+        lightboxImg.src = "";
+    }
+});
