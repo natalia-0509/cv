@@ -163,7 +163,7 @@ h1,h2,h3{ margin:0; }
     font-size: clamp(35px, 6.2vw, 60px);
     line-height: .92;
     letter-spacing: -0.6px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 18px;
 }
 
