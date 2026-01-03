@@ -143,7 +143,7 @@ h1,h2,h3{ margin:0; }
     display:grid;
     grid-template-columns: minmax(260px, 32%) 1fr;
     gap: 72px;
-    align-items:start;
+    align-items:center;
 }
 
 .avatar{
@@ -152,7 +152,7 @@ h1,h2,h3{ margin:0; }
     border-radius: 999px;
     overflow:hidden;
     background:#dcdcdc;
-    margin-top: -10px;
+    margin-top: -80px;
 }
 .avatar img{
     width:100%; height:100%;
@@ -160,7 +160,7 @@ h1,h2,h3{ margin:0; }
 }
 
 .hTitle{
-    font-size: clamp(72px, 6.2vw, 116px);
+    font-size: clamp(35px, 6.2vw, 60px);
     line-height: .92;
     letter-spacing: -0.6px;
     font-weight: 700;
@@ -186,8 +186,8 @@ h1,h2,h3{ margin:0; }
     margin-top: 10px;
 }
 .bubble{
-    width: 172px;
-    height: 172px;
+    width: 150px;
+    height: 150px;
     border-radius: 999px;
     display:flex;
     align-items:center;
